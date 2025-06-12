@@ -18,7 +18,7 @@ import {
 const Contact = () => {
   return (
     <Layout>
-      <Box sx={{ my: 5, ml: 10, "& h4": { fontWeight: "bold", mb: 2 } }}>
+      <Box sx={{ my: 5, ml: 10, "& h4": { fontSize: "bold", mb: 2 } }}>
         <Typography variant="h4">Contact My Resturant</Typography>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem odio
@@ -29,16 +29,16 @@ const Contact = () => {
       </Box>
       <Box
         sx={{
+          width: 600,
           m: 3,
-          width: "600px",
           ml: 10,
           "@media (max-width:600px)": {
-            width: "300px",
+            width: 300,
           },
         }}
       >
         <TableContainer component={Paper}>
-          <Table aria-label="contact table">
+          <Table ariaaria-label="customized table">
             <TableHead>
               <TableRow>
                 <TableCell
@@ -52,18 +52,20 @@ const Contact = () => {
             <TableBody>
               <TableRow>
                 <TableCell>
-                  <SupportAgentIcon sx={{ color: "red", pt: 1 }} /> 1800-00-0000
-                  (tollfree)
+                  <SupportAgentIcon sx={{ color: "red", pt: 1 }} />
+                  1800-00-0000(tollfree)
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>
-                  <MailIcon sx={{ color: "skyblue", pt: 1 }} /> help@myrest.com
+                  <MailIcon sx={{ color: "skyblue", pt: 1 }} />
+                  help@myrest.com
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>
-                  <CallIcon sx={{ color: "green", pt: 1 }} /> 1234567890
+                  <CallIcon sx={{ color: "green", pt: 1 }} />
+                  1234567890
                 </TableCell>
               </TableRow>
             </TableBody>

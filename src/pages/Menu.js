@@ -8,8 +8,10 @@ import {
   CardContent,
   CardMedia,
   Typography,
+  CardActions,
+  Button,
 } from "@mui/material";
-
+import Banner from "../images/banner.jpeg";
 const Menu = () => {
   return (
     <Layout>
@@ -34,6 +36,7 @@ const Menu = () => {
         ))}
       </Box>
     </Layout>
+
   );
 };
 
